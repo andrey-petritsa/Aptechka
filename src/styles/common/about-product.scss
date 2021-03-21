@@ -1,0 +1,289 @@
+.about-product {
+    &_green {
+        ul {
+            background-color: $dentinale-color;
+        }
+
+        .about-product__image {
+            background-color: $dentinale-color;
+        }
+    }
+
+    &_blue {
+        ul {
+            background-color: $windi-color;
+        }
+
+        .about-product__image {
+            background-color: $windi-color;
+        }
+    }
+
+    &_pink {
+        ul {
+            background-color: $nosefrida-color;
+        }
+
+        .about-product__image {
+            background-color: $nosefrida-color;
+        }
+    }
+
+    &__menu {
+        padding: 0 30px;
+        display: flex;
+        margin: 0;
+        height: 64px;
+        justify-content: center;
+
+        @media (max-width: 630px) {
+            justify-content: space-between;
+        }
+
+        @media (max-width: 512px) {
+            display: none;
+        }
+
+        align-items: center;
+    }
+
+    &__link {
+        list-style-type: none;
+        margin: 0 60px 0 0;
+
+        @media (max-width: 630px) {
+            margin: 0;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__header {
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    &__body {
+        display: inline-flex;
+        margin-top: 50px;
+        padding: 0 20px;
+
+        @media (max-width: 765px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &:nth-child(1) {
+            flex: 0 1 25%;
+
+            .about-product__advantage-heading {
+                text-align: right;
+
+                @media (max-width: 1200px) {
+                    text-align: center;
+                }
+
+                @media (max-width: 765px) {
+                    text-align: left;
+                }
+            }
+
+            .about-product__advantage {
+                justify-content: flex-end;
+
+                @media (max-width: 1200px) {
+                    justify-content: center;
+                }
+
+                @media (max-width: 765px) {
+                    justify-content: flex-start;
+                }
+            }
+
+            .about-product__advantage-icon {
+                margin-left: 30px;
+
+                @media (max-width: 1200px) {
+                    margin: 0;
+                }
+            }
+
+            @media (max-width: 765px) {
+                order: 2;
+                flex: 0 1 100%;
+            }
+        }
+
+        &:nth-child(2) {
+            flex: 0 1 50%;
+            padding: 0 30px;
+
+            @media (max-width: 765px) {
+                padding: 0;
+                order: 1;
+                flex: 0 1 100%;
+                margin-bottom: 50px;
+            }
+        }
+
+        &:nth-child(3) {
+            flex: 0 1 25%;
+
+            @media (max-width: 765px) {
+                order: 3;
+                flex: 0 1 100%;
+            }
+
+            .about-product__advantage-icon {
+                margin-right: 30px;
+
+                @media (max-width: 1200px) {
+                    margin: 0;
+                }
+            }
+
+            .about-product__advantage {
+                justify-content: flex-start;
+
+                @media (max-width: 1200px) {
+                    justify-content: center;
+                }
+
+                @media (max-width: 765px) {
+                    justify-content: flex-start;
+                }
+            }
+
+            .about-product__advantage-heading {
+                text-align: center;
+
+                @media (max-width: 765px) {
+                    text-align: left;
+                }
+            }
+
+            .about-product__advantage-icon {
+                order: 1;
+            }
+
+            .about-product__advantage-heading {
+                order: 2;
+            }
+
+            @media (max-width: 1200px) {
+                .about-product__advantage-icon {
+                    order: 1;
+                }
+
+                .about-product__advantage-heading {
+                    order: 1;
+                }
+            }
+
+            @media (max-width: 765px) {
+                .about-product__advantage-icon {
+                    order: 1;
+                }
+
+                .about-product__advantage-heading {
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    &__advantage {
+        // min-height: 200px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1200px) {
+            flex-direction: column-reverse;
+        }
+
+        @media (max-width: 765px) {
+            flex-direction: row;
+        }
+
+        margin-bottom: 30px;
+    }
+
+    &__advantage-heading {
+        max-width: 190px;
+        font-size: 24px;
+
+        @media (max-width: 765px) {
+            font-size: 20px;
+        }
+
+        font-weight: 700;
+        color: $dark-blue;
+
+        @media (max-width: 765px) {
+            max-width: none;
+            order: 2;
+            margin: 0 0 0 20px;
+        }
+    }
+
+
+    &__advantage-icon {
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        transition: transform 0.3s ease;
+        min-width: 64px;
+
+        img {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+        }
+
+        @media (max-width: 765px) {
+            order: 1;
+        }
+    }
+
+    &__image {
+        border-radius: 50%;
+
+        img {
+            $about-product-image-size: 500px;
+
+            object-fit: contain;
+        }
+    }
+
+    &__preview {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+
+        @media (max-width: 765px) {
+            margin: 20px 0 0 0;
+        }
+    }
+
+    &__preview-image {
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        transition: transform 0.3s ease;
+        margin-right: 30px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+

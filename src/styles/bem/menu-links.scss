@@ -1,0 +1,31 @@
+.menu-link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: $dark-blue;
+    transition: color 0.3s ease;
+    // &:visited {
+
+    // }
+    &:hover {
+        color: blue;
+    }
+
+    &_underline {
+        &::after {
+            display: block;
+            content: "";
+            border-bottom: solid 3px $dark-blue;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
+
+        &:hover {
+            color: $dark-blue;
+        }
+    }
+}

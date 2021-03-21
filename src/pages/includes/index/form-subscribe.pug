@@ -1,0 +1,18 @@
+.form-subscribe
+  .form-subscribe__column
+    form.form-subscribe__body(action='#' method='POST')
+      .form-subscribe__header
+        .form-subscribe__heading Подпишитесь на рассылку
+        .form-subscribe__text Рассказываем о здоровье и развитии малышей
+      .form-subscribe__item.form-subscribe__item_border.form-subscribe__item_big
+        input#form-subscribe__client-name.form-subscribe__client-name(type='text' placeholder='Ваше имя' name='name')
+      .form-subscribe__item.form-subscribe__item_border.form-subscribe__item_big
+        input#form-subscribe__client-date.form-subscribe__client-date(type='text' name='date', placeholder="День рождения малыша")
+      .form-subscribe__item.form-subscribe__item_border.form-subscribe__item_big
+        input#form-subscribe__client-email.form-subscribe__client-email(type='email' placeholder='E-mail' name='email')
+      .form-subscribe__item
+        input.about-button.about-button_white.form-subscribe__button(type="submit" value="Подписаться") 
+      .form-subscribe__item
+        .form-subscribe__agree-text Отправляя сообщение, вы даёте #[a.form-subscribe__agree-link(href="#") согласие] на обработку персональных данных. 
+  .form-subscribe__column
+    img.form-subscribe__image(src='/img/form-subscribe-image.jpg' alt='#')

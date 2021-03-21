@@ -1,0 +1,28 @@
+.about-button {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-color: $dark-blue;
+    display: inline-block;
+    font-size: 14px;
+    padding: 20px 60px;
+    border-radius: 100px;
+    border: none;
+
+    &:hover {
+        color: $dark-blue;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+
+    cursor: pointer;
+
+    &_white {
+        background-color: white;
+        color: $dark-blue;
+
+        &:hover {
+            background-color: $dark-blue;
+            color: white;
+        }
+    }
+}
